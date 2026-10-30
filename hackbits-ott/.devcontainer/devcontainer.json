@@ -1,0 +1,18 @@
+{
+  "name": "Hackbits OTT",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "forwardPorts": [3000, 3001],
+  "portsAttributes": {
+    "3000": { "label": "Web" },
+    "3001": { "label": "Admin" }
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "bradlc.vscode-tailwindcss", "esbenp.prettier-vscode", "mathiasfrohlich.Kotlin"]
+    }
+  }
+}

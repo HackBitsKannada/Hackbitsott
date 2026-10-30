@@ -1,0 +1,35 @@
+# dependencies / builds
+node_modules/
+.next/
+out/
+dist/
+.vercel/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# secrets — NEVER commit
+.env
+.env.local
+.env.*.local
+*.jks
+*.keystore
+keystore.properties
+local.properties
+google-services.json
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+*.apk
+*.aab
+
+# Supabase local
+supabase/.branches/
+supabase/.temp/
+
+# OS / editors
+.DS_Store
+.idea/
